@@ -8,12 +8,13 @@ import { items } from "./data/items";
 import { getCurrentMonth, filterListByMonth } from "./helpers/dateFilter";
 import { TableArea } from "./components/TableArea";
 
+
 const App = () => {
   const [list, setList] = useState(items);
   const [filteredList, setFilteredList] = useState<Item[]>([]);
   const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
 
-  useEffect(()=>{
+	useEffect(()=>{
     setFilteredList( filterListByMonth(list, currentMonth) );
   }, [list, currentMonth]);
 
