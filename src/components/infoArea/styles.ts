@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 
-export const Container = styled.div `
+export const Container = styled.div`
 background-color: #fff;
 box-shadow: 0px 0px 5px #ccc;
 border-radius: 10px;
@@ -21,10 +21,10 @@ align-items: center;
 
 
 export const MonthArrow = styled.div`
-width: 40px;
-text-align: center;
-font-size: 25px;
-cursor: pointer;
+    width: 40px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
 `;
 
 export const MonthTitle = styled.div`
